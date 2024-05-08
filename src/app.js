@@ -9,7 +9,7 @@ import PokemonGrid from "./components/PokemonGrid";
 
 function App() {
   const [search, setSearch] = useState("");
-  const [type, setType] = useState("");
+  const [type, setType] = useState("all");
 
   /* 
         INSTRUCTION: 

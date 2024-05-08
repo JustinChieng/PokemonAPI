@@ -8,8 +8,8 @@ const API_URL = "http://localhost:5000";
     - API call may include query parameters for search and type.
 */
 
-export const getPokemons = async (type) => {
-  let params = {};
+export const getPokemons = async (search, type) => {
+  let params = {search : search};
   if (type !== "all") {
     params.type = type;
   }
